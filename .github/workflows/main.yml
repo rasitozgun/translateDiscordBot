@@ -12,14 +12,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - name: Build Docker image
-              uses: actions/docker/build@v3
-              with:
-                  image: node:alpine
-                  context: .
-                  args: --no-cache
-
-            - name: Push Docker image to Docker Hub
+            - name: Build and push Docker image
               uses: docker/build-push-action@v3
               with:
                   username: ${{ secrets.DOCKER_USERNAME }}
