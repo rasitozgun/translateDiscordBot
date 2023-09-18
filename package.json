@@ -7,7 +7,7 @@
 		"test": "node .",
 		"start": "nodemon",
 		"lint": "eslint .",
-		"build": "docker build . -t translate-bot",
+		"build": "docker build . -t kebabrock/translate-bot",
 		"start:dev": "docker run -d --rm translate-bot"
 	},
 	"keywords": [],
