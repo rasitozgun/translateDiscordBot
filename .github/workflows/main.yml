@@ -22,7 +22,7 @@ jobs:
               id: meta
               uses: docker/metadata-action@v5
               with:
-                  images: rasitozgun/translate-bot
+                  images: rasitozgun/translateDiscordBot
 
             - name: Build and push Docker image
               uses: docker/build-push-actions@v5
