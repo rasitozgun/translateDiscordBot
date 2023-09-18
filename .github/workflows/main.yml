@@ -20,7 +20,7 @@ jobs:
                   password: ${{ secrets.DOCKER_PASSWORD }}
 
             - name: Build Docker image
-              run: docker build -t kebabrock/translate-bot:latest .
+              run: docker build . -t kebabrock/translate-bot:latest
 
             - name: Push Docker image
               run: docker push kebabrock/translate-bot:latest
