@@ -8,7 +8,7 @@
 		"start": "nodemon",
 		"lint": "eslint .",
 		"build": "docker build . -t kebabrock/translate-bot",
-		"start:dev": "docker run -d --rm translate-bot"
+		"push": "docker push kebabrock/translate-bot"
 	},
 	"keywords": [],
 	"author": "rabbit",
