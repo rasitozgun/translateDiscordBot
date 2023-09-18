@@ -6,7 +6,9 @@
 	"scripts": {
 		"test": "node .",
 		"start": "nodemon",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"build": "docker build . -t translate-bot",
+		"start:dev": "docker run -d --rm translate-bot"
 	},
 	"keywords": [],
 	"author": "rabbit",
